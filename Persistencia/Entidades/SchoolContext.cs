@@ -1,7 +1,6 @@
-﻿using ContosoUniversity.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
-namespace ContosoUniversity.Data
+namespace Persistencia.Entidades
 {
     public class SchoolContext : DbContext
     {
@@ -13,4 +12,5 @@ namespace ContosoUniversity.Data
         public DbSet<Enrollment> Enrollments { get; set; }
         public DbSet<Student> Students { get; set; }
     }
+
 }
